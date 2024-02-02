@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="start-overlay">
+        <div id="start-message">
+            <h1> Memory Game </h1>
+            <p> This is a time challenge where you need to find all matching pairs in the shortest time possible with the fewest clicks! </p>
+            <p> In the upper menu, you can select a set of tiles and the difficulty level. You can also customize sound options there. </p>
+            <p> The game starts automatically after clicking on one of the fields. </p>
+            <div id="confirm-button">OK</div>
+        </div>
+    </div>
+    <header id="main-header">
+        <div class="controls" id="left-panel">  
+            <div id="timer"><span id="time">0</span> </div>
+            <div id="tile-select" class="button-row">
+                <p class="game-button label">LEVEL:</p>
+                <div class="game-button clickable" id="first-tileset">BIRDS</div>
+                <div class="game-button clickable" id="second-tileset">SPACE</div>
+                <div class="game-button clickable" id="third-tileset">ANIMALS</div>
+            </div>
+            <div id="difficulty" class="button-row">
+                <p class="game-button label">DIFFICULTY LEVEL:</p>
+                <div class="game-button clickable" id="easy-mode">EASY</div>
+                <div class="game-button clickable" id="medium-mode">MEDIUM</div>
+                <div class="game-button clickable" id="hard-mode">HARD</div>
+            </div>
+        </div>
+        <div id="main-text">
+            <div id="title" class="animated"></div>
+        </div>
+        <div class="controls" id="right-panel">
+            <div id="music" class="button-row">
+                <p class="game-button label">AUDIO:</p>
+                <div class="game-button clickable" id="music-toggle">MUSIC</div>
+                <div class="game-button clickable" id="sound-toggle">SOUNDS</div>
+            </div>
+            <div id="start" class="game-button">RESTART</div>
+        </div>
+    </header>
+    <section id="game">
+        <div id="victory-screen">
+            <h2>VICTORY!</h2>
+            <img id="trophy" src="images/backgrounds/trophy_remix_by_monsterbraingames.svg" alt="a trophy">
+            <div id="score-details">
+                <p class="score-text"><span id="time-score">0</span> sec.</p>
+                <p class="score-text"><span id="click-score">0</span> discoveries</p>
+            </div>
+            <div class="score-text" id="total">SCORE: <span id="score">0</span></div>
+            <div id="stars-container">
+                <div id="star1" class="star"><img src="images/backgrounds/blackStar.svg" alt="a black star"></div>
+                <div id="star2" class="star"><img src="images/backgrounds/blackStar.svg" alt="a black star"></div>
+                <div id="star3" class="star"><img src="images/backgrounds/blackStar.svg" alt="a black star"></div>
+                <div id="star4" class="star"><img src="images/backgrounds/blackStar.svg" alt="a black star"></div>
+                <div id="star5" class="star"><img src="images/backgrounds/blackStar.svg" alt="a black star"></div>
+            </div>       
+        </div>
+        <div id="main-grid" class="four-columns">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+            <div class="box" id="box10"></div>
+            <div class="box" id="box11"></div>
+            <div class="box" id="box12"></div>
+            <div class="box" id="box13"></div>
+            <div class="box" id="box14"></div>
+            <div class="box" id="box15"></div>
+            <div class="box" id="box16"></div>
+        </div>
+    </section>
+    <footer id="main-footer">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
